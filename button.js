@@ -241,7 +241,7 @@ createButton('Chọn danh mục', () => {
 
 // Nhập số trang
 createButton('Nhập số trang', () => {
-    const soTrangSelectElement = document.querySelector('select[name="attributes_40[]"]');
+    const soTrangSelectElement = document.querySelector('select[name="attributes_46[]"]');
     const soTrang = prompt('Nhập số trang tài liệu (1, 2, 3,...):');
     const soTrangOptions = Array.from(soTrangSelectElement.options);
     const selectedSoTrangOption = soTrangOptions.find(option => option.value === soTrang);
@@ -368,11 +368,11 @@ createButton('Nhập giá tiền', () => {
 
 
 // Thiết lập ngôn ngữ mặc định (Tiếng Việt)
-document.querySelector('select[name="attributes_49[]"]').value = "Tiếng Việt"; // Ngôn ngữ mặc định là Tiếng Việt
+document.querySelector('select[name="attributes_55[]"]').value = "Tiếng Việt"; // Ngôn ngữ mặc định là Tiếng Việt
 // Thiết lập giá trị mặc định khác (không cần nhập)
 // document.querySelector('select[name="attributes_37[]"]').value = "DOCX"; // Định dạng tài liệu là DOCX
 // Chọn tất cả các option có giá trị là "DOCX" và đánh dấu là selected
-document.querySelectorAll('select[name="attributes_31[]"] option[value="DOCX"]').forEach(option => {
+document.querySelectorAll('select[name="attributes_37[]"] option[value="DOCX"]').forEach(option => {
     option.selected = true;
   });
   
