@@ -1,6 +1,4 @@
-// Tạo container chứa các button và thêm vào góc phải dưới cùng màn hình
-
-
+try {    // Tạo container chứa các button và thêm vào góc phải dưới cùng màn hình
 const buttonContainer = document.createElement('div');
 buttonContainer.style.position = 'fixed';
 buttonContainer.style.bottom = '10px';
@@ -392,3 +390,67 @@ document.querySelector('textarea[name="item_seo_desc"]').value = "Với những 
 document.querySelector('textarea[name="item_seo_keyword"]').value = "None";
 
 console.log('Mã JavaScript đã được chạy thành công và các giá trị mặc định đã được thiết lập!');
+(function() {
+    // Tạo phần tử div cho watermark
+    const watermark = document.createElement('div');
+    
+    // Đặt nội dung của watermark
+    watermark.textContent = 'KHỞI TẠO BUTTON THÀNH CÔNG';  // Nội dung watermark
+    
+    // Thêm CSS cho watermark
+    watermark.style.position = 'fixed';  // Đảm bảo watermark luôn nằm trên trang
+    watermark.style.top = '50%';
+    watermark.style.left = '50%';
+    watermark.style.transform = 'translate(-50%, -50%)';  // Căn giữa
+    watermark.style.fontSize = '30px'; // Cỡ chữ
+    watermark.style.color = 'rgba(0, 0, 0, 0.1)';  // Màu sắc watermark (mờ dần)
+    watermark.style.pointerEvents = 'none';  // Không cho phép watermark tương tác
+    watermark.style.userSelect = 'none';  // Không cho phép chọn văn bản trong watermark
+    watermark.style.zIndex = '9999';  // Đặt watermark trên cùng
+    watermark.style.opacity = '1';  // Đảm bảo watermark ban đầu có độ mờ 100%
+
+    // Thêm watermark vào body của trang
+    document.body.appendChild(watermark);
+
+    // In ra thông báo trong console
+    console.log('KHỞI TẠO BUTTON THÀNH CÔNG');
+    
+    // Làm watermark mờ dần sau 3 giây
+    setTimeout(() => {
+        watermark.style.transition = 'opacity 2s';  // Đặt hiệu ứng mờ dần trong 2 giây
+        watermark.style.opacity = '0';  // Đặt opacity thành 0, làm watermark mờ dần
+    }, 3000);  // Chờ 3 giây trước khi bắt đầu mờ dần
+})();
+}
+catch(error) {
+
+    const watermark = document.createElement('div');
+    
+    // Đặt nội dung của watermark
+    watermark.textContent = 'thằng ấn độ lại sửa code ròi, hiện tại code chưa update, nên phần định dạng, số trang, ngôn ngữ, đều không hoạt động được nhé';  // Nội dung watermark
+    
+    // Thêm CSS cho watermark
+    watermark.style.position = 'fixed';  // Đảm bảo watermark luôn nằm trên trang
+    watermark.style.top = '50%';
+    watermark.style.left = '50%';
+    watermark.style.transform = 'translate(-50%, -50%)';  // Căn giữa
+    watermark.style.fontSize = '30px'; // Cỡ chữ
+    watermark.style.color = 'rgba(0, 0, 0, 0.1)';  // Màu sắc watermark (mờ dần)
+    watermark.style.pointerEvents = 'none';  // Không cho phép watermark tương tác
+    watermark.style.userSelect = 'none';  // Không cho phép chọn văn bản trong watermark
+    watermark.style.zIndex = '9999';  // Đặt watermark trên cùng
+    watermark.style.opacity = '1';  // Đảm bảo watermark ban đầu có độ mờ 100%
+
+    // Thêm watermark vào body của trang
+    document.body.appendChild(watermark);
+
+    // In ra thông báo trong console
+    console.log('Code chạy tHẤT BẠI');
+    
+    // Làm watermark mờ dần sau 3 giây
+    setTimeout(() => {
+        watermark.style.transition = 'opacity 2s';  // Đặt hiệu ứng mờ dần trong 2 giây
+        watermark.style.opacity = '0';  // Đặt opacity thành 0, làm watermark mờ dần
+    }, 13000);  // Chờ 3 giây trước khi bắt đầu mờ dần }
+}
+
