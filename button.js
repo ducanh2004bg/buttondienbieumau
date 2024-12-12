@@ -468,7 +468,7 @@ createButton('Nhập giá tiền', () => {
 });
 
     
-    createButton('TỰ ĐỘNG SELECT FILE (ĐK: BẠN PHẢI TẢI FILE LÊN TRƯỚC)', () => {
+    createButton('TỰ ĐỘNG SELECT FILE (UP FILE TRƯỚC)', () => {
         // Lấy thẻ select cho phần tử item_thumbnail2
         let selectElement1 = document.querySelector('#item_thumbnail2');
         let options1 = selectElement1.options;
